@@ -1,0 +1,46 @@
+{
+  "paths": {
+    "/route1": {
+      "GET": {
+        "description": "route 1 GET",
+        "security": [
+          {
+            "auth_jwt": [
+              "role1"
+            ]
+          }
+        ]
+      },
+      "POST": {
+        "security": [
+          {
+            "auth_jwt": [
+              "role1",
+              "role2"
+            ]
+          }
+        ]
+      },
+      "DELETE": {
+        "security": [
+          {
+            "auth_jwt": [
+              "role2"
+            ]
+          }
+        ]
+      }
+    },
+    "/route2": {
+      "GET": {
+        "security": [
+          {
+            "auth_jwt": [
+              "role1"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
