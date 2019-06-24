@@ -1,6 +1,8 @@
 # swagger-mod-security
 
-Methods to filter a provided swagger schema.
+Methods to filter a provided swagger schema by `security`.
+
+See https://github.com/pwelagedara/swagger-mod for other filtering capabilities.
 
 ## `includeOnly`
 
