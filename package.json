@@ -6,7 +6,6 @@
   "author": "Patrick Curry <patrick.curry@countingup.com>",
   "license": "MIT",
   "scripts": {
-    "example": "node ./example.js",
     "test": "jest src",
     "fmt": "prettier --write \"**/*.md\" && prettier --write \"./**/*.js\"",
     "fmt-check": "prettier --list-different --parser=markdown \"./**/*.md\" && prettier --list-different \"./**/*.js\""

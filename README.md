@@ -1,15 +1,22 @@
 # swagger-mod-security
 
-Methods to filter a provided swagger schema by `security`.
+Modifies an existing swagger document using filters operating on the `security` section of paths.
 
-See https://github.com/pwelagedara/swagger-mod for other filtering capabilities.
+Currently the only supported filter is `includeOnly`.
 
-## `includeOnly`
+See https://github.com/pwelagedara/swagger-mod for filters operating on other fields.
 
-Filters a swagger schema to include only path operations with specified `security` present.
+## Available filters
 
-If a path is filtered and returns no operations, it is excluded.
+### `includeOnly`
 
-No fields of the schema will be modified.
+Returns a swagger document including only the paths containing the specified roles. This can only operate on one type
+of security at a time.
 
-See [example.js](./example.js).
+## Examples
+
+See the `examples` directory.
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT) License.

@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { includeOnly } = require("./index");
+const { includeOnly } = require("../index");
 
 // read example swagger schema from file
 const schema = JSON.parse(fs.readFileSync("./example.json", "utf8"));
