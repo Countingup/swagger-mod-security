@@ -1,0 +1,39 @@
+{
+  "name": "swagger-mod-security",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:Countingup/swagger-mod-security.git",
+  "author": "Patrick Curry <patrick.curry@countingup.com>",
+  "license": "MIT",
+  "scripts": {
+    "filter": "node ./index.js",
+    "test": "jest src",
+    "fmt": "prettier --write \"**/*.md\" && prettier --write \"./**/*.js\"",
+    "fmt-check": "prettier --list-different --parser=markdown \"./**/*.md\" && prettier --list-different \"./**/*.js\""
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "husky": "^2.4.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "yarn run prettier --write --parser=markdown",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
