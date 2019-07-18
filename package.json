@@ -1,7 +1,7 @@
 {
   "name": "swagger-mod-security",
   "description": "Transform swagger schema by filtering paths",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:Countingup/swagger-mod-security.git"
@@ -39,5 +39,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "keywords": ["swagger"]
+  "keywords": [
+    "swagger"
+  ]
 }
