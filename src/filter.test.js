@@ -95,7 +95,7 @@ describe("includeOnly", () => {
   it("should return empty for unrecognised auth", () => {
     expect(includeOnly("unrecognised", ["role1"], schema())).to.deep.equal(emptySchema());
   });
-  it("should exclude routes with missing security", () => {
-    expect(includeOnly("auth_jwt", ["role1"], schemaWithMissingSecurity())).to.deep.equal(emptySchema());
+  it("should include routes with missing security", () => {
+    expect(includeOnly("auth_jwt", ["role1"], schemaWithMissingSecurity())).to.deep.equal(schemaWithMissingSecurity());
   });
 });
