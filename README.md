@@ -17,6 +17,18 @@ of security at a time.
 
 See the `examples` directory.
 
+## Publishing
+
+Run `yarn version` to run tests, bump the version, push branch/tags & publish new version.
+
+You will need to be logged in to do this: `yarn login`.
+
+```shell script
+yarn version --<patch|minor|major>
+```
+
+See https://yarnpkg.com/en/docs/cli/version for more information.
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT) License.
