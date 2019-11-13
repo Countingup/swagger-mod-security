@@ -7,6 +7,10 @@ exports.includeOnly = (authKey, acceptedRoles, schema) => {
         .map(path => {
           return path.filter(operation => {
             const security = (operation.get("security") || Immutable.List()).toJS();
+            if (security.length === 0) {
+              return true; // No security = most permissive so should always be included
+            }
+
             for (let i = 0; i < security.length; i++) {
               const auth = security[i];
               const roles = auth[authKey];
