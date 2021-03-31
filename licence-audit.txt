@@ -1,3 +1,6 @@
+Summary of production and development dependencies and their licences.
+This is derived from `yarn licenses list` -- please use that command for definitive information.
+
 dependencies summary:
 	✅    1 (AFL-2.1 OR BSD-3-Clause)
 	✅   10 MIT
