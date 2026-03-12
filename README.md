@@ -1,3 +1,6 @@
+> [!WARNING]
+> This project is no longer maintained.
+
 # swagger-mod-security
 
 Modifies an existing swagger document using filters operating on the `security` section of paths.
